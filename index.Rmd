@@ -1,0 +1,51 @@
+---
+title       : My Data Presentation
+subtitle    : Data Sets For Data Scientists
+author      : Eric William Dolan
+job         : Eisforinnovate 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+github:
+  user: Eisforinnovate
+  repo: slidifyPres
+---
+
+## This is my widget app
+
+1. Choose a data set
+2. Choose your sample slide
+3. The GoGo Widget! Poof, your results appear!
+
+--- .class #id 
+
+## Data Sets Available
+Here are the data sets
+>1. Rocks
+>2. Pressure
+>3. Cars
+
+---
+
+##Visualization Code
+```{r echo= F, results= 'asis', message= F}
+require (googleVis)
+M1 = gvisMotionChart(Fruits, idvar= 'Fruit', timevar = "Year")
+print(M1, tag = 'chart')
+```
+
+
+---
+
+## Things to improve on
+How to make this program better
+>1. Better UI
+>2. Choice to upload data sets
+>3. Ways to manipulate data visualization 
+
+
+
+
